@@ -109,6 +109,7 @@ int main() {
 				t2.open(task2_pth);
 				t2.read();
 				t2.analysis();
+				system("pause > nul");
 				break;
 			case 13:
 				exit = true;
