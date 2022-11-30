@@ -5,6 +5,8 @@
 #include "stack.h"
 #include "fileStr.h"
 
+// lab 2
+
 using namespace std;
 
 void set_sign(stack&);
