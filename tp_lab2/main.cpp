@@ -18,7 +18,9 @@ enum colors_ {
 };
 
 int main() {
-
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+		
 	stack st;
 	stack st_copy;
 	const string stack_pth = "stack_data.txt";
@@ -58,6 +60,7 @@ int main() {
 		string sign;
 		fileStr t2;
 		string task2_pth;
+		string keyword;
 
 		if (ENTER_) {
 			switch (func) {
@@ -108,9 +111,11 @@ int main() {
 				system("cls");
 				cout << "Enter the path to file\n";
 				cin >> task2_pth;
+				cout << "Enter the keyword to count\n";
+				cin >> keyword;
 				t2.open(task2_pth);
 				t2.read();
-				t2.analysis();
+				t2.analysis(keyword);
 				system("pause > nul");
 				break;
 			case 13:

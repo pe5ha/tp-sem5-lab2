@@ -6,8 +6,7 @@ class fileStr {
 	std::string pth;
 	std::ifstream file;
 	std::string txt;
-	MyVect <std::string> interrogative_sent;
-	MyVect <std::string> exclamation_sent;
+	MyVect <std::string> sentence;
 
 
 public:
@@ -16,5 +15,5 @@ public:
 	~fileStr();
 	void open(std::string);
 	bool read();
-	void analysis();
+	void analysis(std::string);
 };
